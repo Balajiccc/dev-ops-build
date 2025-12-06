@@ -1,0 +1,6 @@
+version: '3'
+services:
+  react-app:
+    image: yourdockerhubusername/devops-react:latest
+    ports:
+      - "80:80"
