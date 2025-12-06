@@ -18,11 +18,11 @@ pipeline {
             steps {
                 script {
                     if (BRANCH_NAME == "dev") {
-                        sh 'docker tag yourdockerhubusername/devops-react:latest yourdockerhubusername/dev:latest'
-                        sh 'docker push yourdockerhubusername/dev:latest'
+                        sh 'docker tag mailjavasend/devops-react:latest mailjavasend/dev:latest'
+                        sh 'docker push mailjavasend/dev:latest'
                     } else if (BRANCH_NAME == "master") {
-                        sh 'docker tag yourdockerhubusername/devops-react:latest yourdockerhubusername/prod:latest'
-                        sh 'docker push yourdockerhubusername/prod:latest'
+                        sh 'docker tag mailjavasend/devops-react:latest mailjavasend/prod:latest'
+                        sh 'docker push mailjavasend/prod:latest'
                     }
                 }
             }
